@@ -461,7 +461,14 @@
     width: 300px;
     cursor: pointer;
     transition: all 0.1s;
-    border-radius: 7px;
+    border-radius: 8px;
+}
+.cancel {
+    background: var(--element-color);
+}
+.cancel:hover {
+    background: var(--second-color);
+    border-color: var(--second-color);
 }
 .connect:hover,
 .cancel:hover {
@@ -472,10 +479,10 @@
 .input-login .password,
 .A2F {
     color: var(--color);
-    background: none;
-    border: solid 2px var(--element-color);
+    background: var(--background-element);
     width: 50%;
     padding: 0.7rem 1rem;
     margin-bottom: 2rem;
-    border-radius: 6px;
+    border: none;
+    border-radius: 12px;
 }
