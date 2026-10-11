@@ -46,6 +46,7 @@
     text-align: center;
     cursor: pointer;
     transition: all 0.2s;
+    border-radius: 12px;
 }
 .nav-settings-btn:hover{
     background: var(--element-color);
@@ -74,6 +75,7 @@
     padding: 1.5rem 2rem;
     margin: 0.5rem;
     backdrop-filter: blur(8px);
+    border-radius: 12px;
 }
 
 .setting-text {
@@ -97,6 +99,7 @@
     text-align: center;
     background: var(--background-transparent);
     color: var(--color);
+    border-radius: 1rem;
 }
 
 .settings-elements {
@@ -132,10 +135,11 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: calc(400px - 8px);
+    width: calc(400px - -8px);
     height: calc(100px - 8px);
     margin: 1rem;
     backdrop-filter: blur(8px);
+    border-radius: 12px;
 }
 
 .account-select {
@@ -169,6 +173,7 @@
     background-size: cover;
     pointer-events: none;
     image-rendering: pixelated;
+    border-radius: 2px;
 }
 
 .profile-infos {
@@ -204,7 +209,7 @@
     align-items: center;
     color: #ff2c2c;
     cursor: pointer;
-    border-radius: 4px;
+    border-radius: 8px;
 }
 
 .delete-profile-icon {
@@ -296,6 +301,7 @@
     color: var(--color);
     padding: 0.7rem 1rem;
     width: 50%;
+    border-radius: 12px;
 }
 
 .java-path-input-file {
@@ -312,6 +318,7 @@
     background: var(--element-color);
     margin: 0 1rem;
     cursor: pointer;
+    border-radius: 12px;
 }
 
 /*******************************************************************************
@@ -332,6 +339,7 @@
     padding: 0.7rem 1rem;
     text-align: center;
     width: 6rem;
+    border-radius: 12px;
 }
 
 .size-cross {
@@ -349,6 +357,7 @@
     background: var(--element-color);
     margin: 0 2rem;
     cursor: pointer;
+    border-radius: 12px;
 }
 
 /*******************************************************************************
@@ -365,6 +374,7 @@
     text-align: center;
     width: 4rem;
     margin-right: 1rem;
+    border-radius: 12px;
 }
 
 .max-files-btn {
@@ -372,6 +382,7 @@
     background: var(--element-color);
     margin: 0 2rem;
     cursor: pointer;
+    border-radius: 12px;
 }
 
 .close-btn {
@@ -386,6 +397,7 @@
     cursor: pointer;
     background: var(--background-element);
     transition: all 0.1s;
+    border-radius: 12px;
 }
 .close-btn:hover{
     border-color: var(--second-color);

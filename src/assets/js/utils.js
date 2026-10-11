@@ -90,7 +90,7 @@ async function setStatus(opt) {
     }
 
     let { ip, port, nameServer } = opt
-    nameServerElement.innerHTML = nameServer
+    nameServerElement.innerHTML = "Pouet Island"
     let status = new Status(ip, port);
     let statusServer = await status.getStatus().then(res => res).catch(err => err);
 

@@ -48,7 +48,6 @@ class Home {
                     blockNews.classList.add('news-block');
                     blockNews.innerHTML = `
                         <div class="news-header">
-                            <img class="server-status-icon" src="assets/images/icon/icon.png">
                             <div class="header-text">
                                 <div class="title">${News.title}</div>
                             </div>
@@ -99,7 +98,7 @@ class Home {
 
         socials.forEach(social => {
             social.addEventListener('click', e => {
-                shell.openExternal(`https://launcher.arsuup.fr/discord?auth=${id}`)
+                shell.openExternal(`https://pub-pouet.arsuup.fr/discord?auth=${id}`)
             })
         });
     }

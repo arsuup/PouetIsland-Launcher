@@ -149,6 +149,7 @@ input::-webkit-inner-spin-button {
     width: 40%;
     padding: 1.5rem;
     background: var(--background);
+    border-radius: 12px;
     z-index: 10;
 }
 
