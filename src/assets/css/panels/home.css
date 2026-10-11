@@ -1,0 +1,385 @@
+.home .container {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*******************************************************************************
+ *                                                                             *
+ * Status server                                                               *
+ *                                                                             *
+ ******************************************************************************/
+
+.status-server {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--background-transparent);
+    width: 91%;
+    height: 4rem;
+    color: var(--color);
+    margin-top: 3rem;
+    padding: 1rem 1.4rem;
+    text-align: center;
+    backdrop-filter: blur(8px);
+}
+
+.server-status-icon {
+    height: 3.3rem;
+}
+
+.server-status-name {
+    font-size: 1.5rem;
+    font-weight: 200;
+    color: var(--color);
+}
+
+.server-status-text {
+    font-size: 0.9rem;
+    font-weight: 100;
+    color: #1AC707;
+}
+
+.server-status-infos .red {
+    color: #FF0409;
+}
+
+.status-player-count {
+    background: var(--background-element);
+    height: 3rem;
+    min-width: 2rem;
+    border-radius: 0.4rem;
+    backdrop-filter: blur(8px);
+    padding: 0 0.5rem;
+}
+
+.player-count {
+    font-size: 1.5rem;
+    margin: 0.7rem 0.5rem;
+}
+
+.status-player-count:after {
+    position: absolute;
+    content: '';
+    width: 12px;
+    height: 12px;
+    top: -4px;
+    right: -3px;
+    border-radius: 15px;
+    border: solid 3px var(--background);
+    background: #1AC707;
+}
+
+.red:after {
+    background: #FF0409;
+}
+
+.home-content {
+    display: flex;
+    height: calc(100% - 80px);
+    width: 100%;
+    justify-content: space-between;
+}
+
+.home-bottom {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 2.3rem;
+    gap: 3rem;
+}
+
+/*******************************************************************************
+ *                                                                             *
+ * news server                                                                 *
+ *                                                                             *
+ ******************************************************************************/
+
+.new-tab {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+}
+
+.titre-tab-new {
+    margin-top: 1rem;
+    font-size: 2rem;
+    font-weight: 200;
+    padding: 0.5rem 2rem;
+    background: var(--background-transparent);
+    color: var(--color);
+    backdrop-filter: blur(8px);
+}
+
+.news-list {
+    width: 90%;
+    height: 100%;
+    margin: 1rem 0;
+}
+
+.news-block {
+    width: 100%;
+    margin: 0 0 1rem 0;
+    background: var(--background-transparent);
+    backdrop-filter: blur(8px);
+}
+
+.news-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 1.5rem;
+    align-items: center;
+}
+
+.header-text .title {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    font-size: 1.2rem;
+    font-weight: 200;
+    text-align: center;
+}
+
+.news-header .date {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.news-content .bbWrapper {
+    padding: 0 1.5rem;
+    padding-bottom: 1rem;
+    font-size: 1.2rem;
+
+}
+
+.news-content .bbWrapper p {
+    font-weight: 500;
+    margin: 0;
+}
+
+.news-content .bbWrapper .news-author {
+    margin-top: 1rem;
+    text-align: end;
+    font-size: 0.8rem;
+}
+
+.news-content .bbWrapper .news-author span {
+    font-weight: 700;
+}
+
+/*******************************************************************************
+ *                                                                             *
+ * social server                                                               *
+ *                                                                             *
+ ******************************************************************************/
+
+.social-tab {
+    display: flex;
+    width: 100%;
+    height: calc(80% - 1rem);
+    justify-content: left;
+    margin-bottom: 1rem;
+}
+
+.social-list {
+    height: 100%;
+}
+
+.social-block {
+    display: flex;
+    background: var(--background-transparent);
+    width: 90px;
+    height: 90px;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(8px);
+}
+
+.social-block .icon-social {
+    pointer-events: none;
+    background-repeat: no-repeat;
+    height: 55%;
+    width: 55%;
+    background-size: 100%;
+    filter: invert(1);
+}
+
+/*******************************************************************************
+ *                                                                             *
+ * sidebar                                                                     *
+ *                                                                             *
+ ******************************************************************************/
+
+.sidebar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 90px;
+    background: var(--background-transparent);
+    backdrop-filter: blur(8px);
+}
+
+.player-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 3rem;
+    margin: 0 1.5rem;
+}
+
+.player-head {
+    background: url('../../images/default/setve.png'), no-repeat;
+    background-size: cover;
+    image-rendering: pixelated;
+    transition: var(--transition);
+    height: 3rem;
+    width: 3rem;
+    pointer-events: none;
+}
+
+.player-menu {
+    color: var(--element-color);
+    transform: rotate(270deg);
+    pointer-events: none;
+}
+
+.play-elements {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.play-btn {
+    background: var(--element-color);
+    height: 3rem;
+    cursor: pointer;
+    border: none;
+    color: var(--color);
+    font-size: 2rem;
+    font-weight: 200;
+    font-family: 'Archivo';
+    padding: 0 1.5rem;
+    transition: all 0.1s;
+}
+.play-btn:hover {
+    background: var(--second-color);
+}
+
+.instance-select {
+    display: flex;
+    align-items: center;
+    color: var(--color);
+    font-size: 1rem;
+    height: calc(100% - 1px);
+    background: var(--second-color);
+    text-align: center;
+    padding: 0 0.6rem;
+    cursor: pointer;
+    height: 3rem;
+    transition: all 0.1s
+}
+.instance-select:hover {
+    background: #28118e;
+}
+
+.instance-select:before {
+    font-size: 20px;
+    pointer-events: none;
+}
+
+.info-starting-game {
+    display: none;
+    text-align: center;
+    font-weight: 100;
+}
+
+.progress-bar {
+    appearance: none;
+    height: 20px;
+    width: 30rem;
+    margin: 0.5rem 0;
+}
+
+.progress-bar::-webkit-progress-bar {
+    background-color: var(--background);
+    border: solid 1px var(--element-color);
+}
+
+.progress-bar::-webkit-progress-value {
+    background-color: var(--element-color);
+}
+
+.settings-btn {
+    width: 3rem;
+    height: 3rem;
+    font-size: 3rem;
+    color: var(--element-color);
+    margin: 0 1.5rem;
+    cursor: pointer;
+}
+
+.instance-popup {
+    position: absolute;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background: #000000b3;
+    z-index: 10;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.instances-tab {
+    position: relative;
+    background: var(--background);
+    padding: 1rem 3rem;
+}
+
+.close-popup {
+    position: absolute;
+    display: flex;
+    top: 10px;
+    right: 10px;
+    background: var(--background-element);
+    height: 30px;
+    width: 30px;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.instances-tab p {
+    margin-top: 1.5rem;
+    font-size: 2rem;
+}
+
+.instance-elements {
+    background: var(--background-element);
+    text-align: center;
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.instance-elements:hover {
+    background: var(--element-color);
+}
+
+.active-instance {
+    background: var(--element-color);
+}

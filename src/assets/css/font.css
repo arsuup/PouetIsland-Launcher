@@ -1,0 +1,86 @@
+/* Poppins */
+
+@font-face {
+    font-family: 'Archivo';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: local('Archivo Medium'), local('Poppins-Medium'), url('../fonts/Archivo-Medium.woff2') format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+    font-family: 'Archivo';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: local('Archivo Bold'), local('Archivo-Bold'), url('../fonts/Archivo-Bold.woff2') format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+    font-family: 'Archivo';
+    font-style: normal;
+    font-weight: 900;
+    font-display: swap;
+    src: local('Archivo Black'), local('Archivo-Black'), url('../fonts/Archivo-Black.woff2') format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+    font-family: 'Archivo';
+    font-style: normal;
+    font-weight: 100;
+    font-display: swap;
+    src: local('Archivo SemiExpanded Regular'), local('Archivo_SemiExpanded-Regular'), url('../fonts/Archivo_SemiExpanded-Regular.woff2') format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+    font-family: 'Archivo';
+    font-style: normal;
+    font-weight: 200;
+    font-display: swap;
+    src: local('Archivo SemiExpanded Bold'), local('Archivo_SemiExpanded-Bold'), url('../fonts/Archivo_SemiExpanded-Bold.woff2') format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* Icons */
+
+@font-face {
+    font-family: 'Icons';
+    src: url('../fonts/Icons.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Social-icons';
+    src: url('../fonts/social-icons.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+    content: "";
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    background-size: contain;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+}
+
+.icon-close:before {background-image: url('../images/svgs/close_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg');background-size: 1.5rem;left: 3px;top: 2px;}
+.icon-minimize:before {background-image: url('../images/svgs/minimize_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg');background-size: 1.2rem;left: 6px;top: 4px;}
+.icon-maximize:before {background-image: url('../images/svgs/fullscreen_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg');background-size: 1.2rem;left: 6px;top: 5px;}
+.icon-restore-down:before {background-image: url('../images/svgs/fullscreen_exit_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg');background-size: 1.3rem;left: 5px;top: 4px;}
+.icon-account-add:before { background-image: url('../images/svgs/person_add_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg'); }
+.icon-account-delete:before {background-image: url('../images/svgs/person_remove_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg');left: 3px;position: relative;filter: invert(70%) sepia(20%) saturate(10000%) hue-rotate(
+333deg) brightness(100%) contrast(100%);}
+.icon-settings:before {position: relative;top: -1px;background-image: url('../images/svgs/settings_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz40.svg');}
+.icon-monitor:before { background-image: url('../images/svgs/monitor_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg'); }
+.icon-arrow:before { background-image: url('../images/svgs/arrow_forward_ios_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg'); }
+
+.icon-discord { background-image: url('../images/svgs/discord.svg'); }
